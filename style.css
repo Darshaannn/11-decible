@@ -4,8 +4,8 @@
     /* Provided Brand Colors */
     --primary: #0B0B0C;
     --secondary: #1A1A1D;
-    --accent: #7C5CFF;
-    --highlight: #00D4FF;
+    --accent: #FFCC00;
+    --highlight: #FFE600;
     --text-white: #F5F5F5;
     --text-muted: #A0A0A0;
 }
@@ -152,8 +152,8 @@ h4 {
     background: linear-gradient(135deg, var(--accent), var(--highlight));
     border: none;
     border-radius: 8px;
-    color: white;
-    font-weight: 600;
+    color: var(--primary);
+    font-weight: 700;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -162,11 +162,11 @@ h4 {
 }
 
 .nav-links .btn {
-    color: white;
+    color: var(--primary);
 }
 
 .btn:hover {
-    box-shadow: 0 0 20px rgba(124, 92, 255, 0.6);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.6);
     transform: translateY(-2px);
 }
 
@@ -211,8 +211,8 @@ h4 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.4;
-    filter: blur(8px);
+    opacity: 0.7;
+    filter: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -226,9 +226,10 @@ h4 {
 }
 
 .hero h1 {
-    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
     font-weight: 800;
     letter-spacing: -2px;
+    line-height: 1.15;
     margin-bottom: 24px;
     background: linear-gradient(135deg, #fff 0%, #A0A0A0 100%);
     -webkit-background-clip: text;
@@ -257,15 +258,15 @@ h4 {
     backdrop-filter: blur(10px);
     padding: 35px;
     border-radius: 16px;
-    border: 1px solid rgba(124, 92, 255, 0.15);
+    border: 1px solid rgba(255, 204, 0, 0.15);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .card:hover {
     transform: translateY(-8px);
-    border-color: rgba(124, 92, 255, 0.5);
-    box-shadow: 0 0 20px rgba(124, 92, 255, 0.3), inset 0 0 20px rgba(124, 92, 255, 0.1);
+    border-color: rgba(255, 204, 0, 0.5);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.3), inset 0 0 20px rgba(255, 204, 0, 0.1);
 }
 
 .card-icon {
@@ -273,7 +274,7 @@ h4 {
     color: var(--highlight);
     margin-bottom: 20px;
     display: inline-block;
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(255, 230, 0, 0.1);
     padding: 15px;
     border-radius: 12px;
 }
@@ -383,7 +384,7 @@ h4 {
 
 .pricing-card.highlight {
     border: 1px solid var(--accent);
-    background: rgba(124, 92, 255, 0.05);
+    background: rgba(255, 204, 0, 0.05);
     transform: scale(1.05);
 }
 
@@ -501,8 +502,8 @@ h4 {
 
 /* Final CTA */
 .cta-card {
-    background: linear-gradient(135deg, rgba(26, 26, 29, 0.8) 0%, rgba(124, 92, 255, 0.1) 100%);
-    border: 1px solid rgba(124, 92, 255, 0.3);
+    background: linear-gradient(135deg, rgba(26, 26, 29, 0.8) 0%, rgba(255, 204, 0, 0.1) 100%);
+    border: 1px solid rgba(255, 204, 0, 0.3);
     border-radius: 20px;
     padding: 60px 40px;
     text-align: center;
