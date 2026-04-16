@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | 11decibels</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Unicons for Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Extra styles for contact form */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .contact-form-container {
+            background: rgba(26, 26, 29, 0.6);
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            background: var(--primary);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: var(--text-white);
+            font-size: 1rem;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            border-color: var(--accent);
+        }
+
+        .location-image img {
+            width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-info {
+            margin-top: 30px;
+        }
+
+        .contact-info h3 {
+            color: var(--highlight);
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            color: var(--text-muted);
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        @media (max-width: 900px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-number">11</span>
+            <span class="logo-text">decibels</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#portfolio">Our Work</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="contact.html" class="btn">Contact Us</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="uil uil-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="height: 60vh; min-height: 400px;">
+        <div class="hero-bg"><img src="assets/hero.jpg" alt="Studio Background"></div>
+        <div class="hero-content">
+            <h1 class="reveal fade-in-up">Start Your Podcast Today</h1>
+            <p class="reveal fade-in-up delay-1">Get in touch to book your session or ask any questions.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Location -->
+    <section id="contact-info" class="section-contrast">
+        <div class="container">
+            <div class="contact-layout">
+
+                <div class="contact-form-container reveal fade-in-left">
+                    <h2 style="margin-bottom: 20px;">Send a Message</h2>
+                    <form class="contact-form"
+                        onsubmit="event.preventDefault(); alert('Message sent! We will contact you soon.');">
+                        <input type="text" placeholder="Your Name" required />
+                        <input type="email" placeholder="Your Email" required />
+                        <select>
+                            <option value="" disabled selected>What are you interested in?</option>
+                            <option>Audio Recording</option>
+                            <option>Video Podcast</option>
+                            <option>Editing Services</option>
+                            <option>Consulting</option>
+                        </select>
+                        <textarea rows="4" placeholder="Tell us about your project..."></textarea>
+                        <button type="submit" class="btn">Send Request</button>
+                    </form>
+                </div>
+
+                <div class="location-container reveal fade-in-left delay-1">
+                    <div class="location-image">
+                        <img src="assets/contact_location.png" alt="11decibels Studio Exterior">
+                    </div>
+                    <div class="contact-info">
+                        <h3>Our Studio</h3>
+                        <p><i class="uil uil-map-marker"></i> 123 Creator Avenue, Downtown Media District</p>
+                        <p><i class="uil uil-envelope"></i> hello@11decibels.com</p>
+                        <p><i class="uil uil-phone"></i> +1 (555) 019-8392</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-number">11</span>
+                <span class="logo-text">decibels</span>
+            </a>
+            <p>© 2026 11decibels Studio. All rights reserved.</p>
+            <div class="socials">
+                <a href="#"><i class="uil uil-instagram"></i></a>
+                <a href="#"><i class="uil uil-youtube"></i></a>
+                <a href="#"><i class="uil uil-twitter-alt"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
