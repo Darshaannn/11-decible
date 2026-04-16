@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>11decibels | Premium Podcast Studio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <!-- Unicons for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <!-- Navbar -->
     <nav class="navbar">
         <a href="index.html" class="logo">
@@ -21,29 +19,35 @@
         </a>
         <ul class="nav-links">
             <li><a href="index.html#services">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="index.html#portfolio">Our Work</a></li>
             <li><a href="index.html#pricing">Pricing</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html" class="btn">Contact Us</a></li>
+            <li><a href="contact.html" class="btn">Book Your Podcast Session &rarr;</a></li>
         </ul>
-        <div class="hamburger">
-            <i class="uil uil-bars"></i>
-        </div>
+        <div class="hamburger"><i class="uil uil-bars"></i></div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-bg"><img src="assets/hero.jpg" alt="Studio Background"></div>
         <div class="hero-content">
-            <h1 class="reveal fade-in-up">Launch Your Podcast Like a Pro</h1>
-            <p class="reveal fade-in-up delay-1">We help creators record, edit, and scale their content with
-                high-quality production.</p>
-            <button class="btn reveal fade-in-up delay-2" onclick="location.href='contact.html'">Book Your
-                Session</button>
+            <div class="waveform reveal fade-in-up">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <h1 class="reveal fade-in-up delay-1">Turn Conversations Into Content That Grows Your Brand</h1>
+            <p class="reveal fade-in-up delay-2">
+                <span style="font-weight:600; color:var(--text-white);">Record. Edit. Publish. Scale.</span><br>
+                We help creators produce high-quality podcasts and viral short-form content.
+            </p>
+            <button class="btn reveal fade-in-up delay-3" onclick="location.href='contact.html'">Book Your Podcast
+                Session &rarr;</button>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services -->
     <section id="services" class="section-contrast">
         <div class="container">
             <div class="section-header reveal fade-in">
@@ -54,7 +58,7 @@
                 <div class="card reveal fade-in-up">
                     <i class="uil uil-microphone card-icon"></i>
                     <h3>Podcast Recording</h3>
-                    <p>Crystal clear audio in our acoustically treated rooms.</p>
+                    <p>High-quality audio & multi-camera setup.</p>
                 </div>
                 <div class="card reveal fade-in-up delay-1">
                     <i class="uil uil-video card-icon"></i>
@@ -66,40 +70,6 @@
                     <h3>Reels & Shorts Creation</h3>
                     <p>Viral-ready clips formatted perfectly for TikTok and IG.</p>
                 </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Studio Setups -->
-    <section id="studio">
-        <div class="container">
-            <div class="section-header reveal fade-in">
-                <h2>Studio Setups</h2>
-                <p>Flexible spaces to match your vision.</p>
-            </div>
-            <div class="grid horizontal-scroll">
-                <div class="card setup-card reveal fade-in-left">
-                    <div class="card-image"><img src="assets/lounge.png" alt="2-person"></div>
-                    <div class="card-content">
-                        <h3>2-Person Setup</h3>
-                        <p>Intimate setting perfect for interviews and deep conversations.</p>
-                    </div>
-                </div>
-                <div class="card setup-card reveal fade-in-left delay-1">
-                    <div class="card-image"><img src="assets/video_setup.png" alt="4-person"></div>
-                    <div class="card-content">
-                        <h3>4-Person Setup</h3>
-                        <p>Spacious, multi-mic table for panels and group discussions.</p>
-                    </div>
-                </div>
-                <div class="card setup-card reveal fade-in-left delay-2">
-                    <div class="card-image"><img src="assets/hero_mic.png" alt="Custom"></div>
-                    <div class="card-content">
-                        <h3>Custom Setup</h3>
-                        <p>Tailored lighting, props, and arrangements for your specific brand.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -109,31 +79,22 @@
         <div class="container">
             <div class="section-header reveal fade-in">
                 <h2>Portfolio & Clips</h2>
-                <p>Simulated reels-style grid of our recent work.</p>
+                <p>Reel-style grid of our recent viral setups.</p>
             </div>
             <div class="portfolio-grid grid">
                 <div class="portfolio-item reveal fade-in-up">
-                    <div class="reel-mockup">
-                        <i class="uil uil-play-circle play-icon"></i>
+                    <div class="reel-mockup"><i class="uil uil-play-circle play-icon"></i>
                         <div class="reel-stats">1.2M Views</div>
                     </div>
                 </div>
                 <div class="portfolio-item reveal fade-in-up delay-1">
-                    <div class="reel-mockup">
-                        <i class="uil uil-play-circle play-icon"></i>
+                    <div class="reel-mockup"><i class="uil uil-play-circle play-icon"></i>
                         <div class="reel-stats">850K Views</div>
                     </div>
                 </div>
                 <div class="portfolio-item reveal fade-in-up delay-2">
-                    <div class="reel-mockup">
-                        <i class="uil uil-play-circle play-icon"></i>
+                    <div class="reel-mockup"><i class="uil uil-play-circle play-icon"></i>
                         <div class="reel-stats">2.4M Views</div>
-                    </div>
-                </div>
-                <div class="portfolio-item reveal fade-in-up delay-3">
-                    <div class="reel-mockup">
-                        <i class="uil uil-play-circle play-icon"></i>
-                        <div class="reel-stats">500K Views</div>
                     </div>
                 </div>
             </div>
@@ -145,17 +106,16 @@
         <div class="container">
             <div class="section-header reveal fade-in">
                 <h2>Pricing</h2>
-                <p>Simple, transparent packages for creators of all levels.</p>
+                <p>Simple, transparent packages for creators.</p>
             </div>
             <div class="grid pricing-grid">
                 <div class="card pricing-card reveal fade-in-up">
                     <h3>Basic</h3>
                     <div class="price"><span>$</span>99<span>/hr</span></div>
                     <ul>
-                        <li><i class="uil uil-check"></i> Audio Recording</li>
-                        <li><i class="uil uil-check"></i> 2 Mics Provided</li>
-                        <li><i class="uil uil-check"></i> Raw Files Delivery</li>
-                        <li><i class="uil uil-times text-muted"></i> No Video</li>
+                        <li><i class="uil uil-check"></i> 1-hour recording</li>
+                        <li><i class="uil uil-check"></i> 2 camera setup</li>
+                        <li><i class="uil uil-times text-muted"></i> No editing</li>
                     </ul>
                     <button class="btn btn-outline" onclick="location.href='contact.html'">Select Basic</button>
                 </div>
@@ -165,22 +125,20 @@
                     <h3>Premium</h3>
                     <div class="price"><span>$</span>199<span>/hr</span></div>
                     <ul>
-                        <li><i class="uil uil-check"></i> Audio + 4K Video</li>
-                        <li><i class="uil uil-check"></i> Up to 4 Mics & Cams</li>
-                        <li><i class="uil uil-check"></i> Custom Lighting</li>
-                        <li><i class="uil uil-check"></i> Live Switching</li>
+                        <li><i class="uil uil-check"></i> 2-hour session</li>
+                        <li><i class="uil uil-check"></i> 4K video</li>
+                        <li><i class="uil uil-check"></i> 5 reels included</li>
                     </ul>
                     <button class="btn" onclick="location.href='contact.html'">Select Premium</button>
                 </div>
 
                 <div class="card pricing-card reveal fade-in-up delay-2">
                     <h3>Pro</h3>
-                    <div class="price"><span>$</span>499<span>/episode</span></div>
+                    <div class="price"><span>$</span>499<span>/ep</span></div>
                     <ul>
-                        <li><i class="uil uil-check"></i> Everything in Premium</li>
-                        <li><i class="uil uil-check"></i> Full Post-Production</li>
-                        <li><i class="uil uil-check"></i> 3 Shorts/Reels</li>
-                        <li><i class="uil uil-check"></i> Thumbnail Design</li>
+                        <li><i class="uil uil-check"></i> Full production</li>
+                        <li><i class="uil uil-check"></i> Editing + thumbnails</li>
+                        <li><i class="uil uil-check"></i> Unlimited revisions</li>
                     </ul>
                     <button class="btn btn-outline" onclick="location.href='contact.html'">Select Pro</button>
                 </div>
@@ -193,13 +151,13 @@
         <div class="container">
             <div class="section-header reveal fade-in">
                 <h2>Why Choose Us</h2>
-                <p>We are built for creators, by creators.</p>
+                <p>Studio-grade sound that makes you sound like a pro.</p>
             </div>
             <div class="grid">
                 <div class="card reveal fade-in-up">
                     <i class="uil uil-ear card-icon"></i>
-                    <h3>Soundproof Studio</h3>
-                    <p>Zero echo, zero outside noise. Broadcast quality sound.</p>
+                    <h3>Broadcast Quality</h3>
+                    <p>Zero echo, zero outside noise. We help you sound incredible.</p>
                 </div>
                 <div class="card reveal fade-in-up delay-1">
                     <i class="uil uil-camera card-icon"></i>
@@ -208,10 +166,9 @@
                 </div>
                 <div class="card reveal fade-in-up delay-2">
                     <i class="uil uil-rocket card-icon"></i>
-                    <h3>Fast Delivery</h3>
-                    <p>Get your raw files instantly or edited files within 48 hours.</p>
+                    <h3>Growth Focused</h3>
+                    <p>We help you grow using content mapped to platforms' algorithms.</p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -221,17 +178,16 @@
         <div class="container">
             <div class="section-header reveal fade-in">
                 <h2>Testimonials</h2>
-                <p>What our clients say about the 11decibels experience.</p>
+                <p>What creators are saying about us.</p>
             </div>
             <div class="grid testimonial-grid">
                 <div class="card testimonial-card reveal fade-in-up">
-                    <p class="quote">"11decibels completely elevated our show. The audio is crisp, the 4K video is
-                        stunning, and their team makes the entire process effortless."</p>
+                    <p class="quote">"Best podcast experience in Mumbai! The sound quality is unmatched."</p>
                     <div class="client-info">
                         <div class="client-avatar">A</div>
                         <div>
-                            <h4>Alex Johnson</h4>
-                            <span>Host, The Daily Tech Podcast</span>
+                            <h4>Arjun Sharma</h4>
+                            <span>Creator</span>
                         </div>
                     </div>
                 </div>
@@ -246,17 +202,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="card testimonial-card reveal fade-in-up delay-2">
-                    <p class="quote">"Absolutely incredible studio. The lighting, the vibe, the equipment - it's a
-                        creator's dream. Highly recommended."</p>
-                    <div class="client-info">
-                        <div class="client-avatar bg-highlight">M</div>
-                        <div>
-                            <h4>Mark Davis</h4>
-                            <span>Founder, Growth Mindset</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -265,9 +210,10 @@
     <section id="contact" class="final-cta section-contrast">
         <div class="container">
             <div class="cta-card reveal fade-in">
-                <h2>Start Your Podcast Today</h2>
-                <p>Take your content to the next level. Let's make something amazing together.</p>
-                <button class="btn btn-large glow-effect">Book Now</button>
+                <h2>Ready to Start Your Podcast Journey?</h2>
+                <p>Let's elevate your voice and content.</p>
+                <button class="btn btn-large" onclick="location.href='contact.html'">Book Your First Session Today
+                    &rarr;</button>
             </div>
         </div>
     </section>
